@@ -1,10 +1,13 @@
 {
-  "name": "Rust/C++ Lab",
-  "image": "mcr.microsoft.com/devcontainers/rust:1", 
-  "postCreateCommand": "sudo apt-get update -yqq && sudo apt-get install -y --no-install-recommends g++ valgrind && chmod +x build.sh",
-  "customizations": {
-    "vscode": {
-      "extensions": ["rust-lang.rust-analyzer", "ms-vscode.cpptools"]
-    }
-  }
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: main.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
 }
